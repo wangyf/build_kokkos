@@ -1,7 +1,9 @@
 # build_kokkos on ThetaGPU
 
 1. login ThetaGPU compute node
+2. 
   1.1 module load cobalt/cobalt-gpu
+  
   1.2 qsub -n 1 -t60 -A Comp_Perf_Workshop -I -q
   
   
@@ -17,12 +19,14 @@
 3.  cd kokkos
 
     mkdir build
+    
     cd build
 
     module load cmake
     
     
 4. Install on Nvidia A100 GPU 
+
 export KOKKOS=/home/wangyf/THETA/perf_workshop/CompPerfWorkshop/06_kokkos-raja/kokkos/kokkos
 
 cmake .. \
